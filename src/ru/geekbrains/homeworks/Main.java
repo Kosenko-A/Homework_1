@@ -18,6 +18,7 @@ public class Main {
         System.out.println(count(10, 20, 15, 3));
         System.out.println(check(12.5, 5.1));
         System.out.println(chekPositiveNumber(-12));
+        System.out.println(checkNumber(-1));
         System.out.println(sayHelloName("Макс"));
         System.out.println(checkYear(2020));
 
@@ -41,6 +42,13 @@ public class Main {
             answer = "negative number";
         }
         return answer;
+    }
+    public static boolean checkNumber (int a){
+        boolean x = false;
+        if (a<0){
+            x = true;
+        }
+        return x;
     }
     public static String sayHelloName (String name){
         return "Привет, " + name;
